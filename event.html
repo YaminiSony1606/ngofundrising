@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Event Creation</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <header class="landing-header">
+        <div class="container">
+            <h1>NGO Event Creation</h1>
+            <p>Create impactful events for your cause</p>
+            <a href="#create-event" class="btn">Create Event</a>
+        </div>
+    </header>
+
+    <!-- Create Event Form -->
+    <main>
+        <section id="create-event" class="create-event">
+            <div class="container">
+                <h2>Create Your Event</h2>
+                <form action="#" method="POST" class="event-form" id="event-form">
+                    <div class="form-group">
+                        <label for="event-title">Event Title:</label>
+                        <input type="text" id="event-title" name="event-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-description">Event Description:</label>
+                        <textarea id="event-description" name="event-description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date:</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Event Time:</label>
+                        <input type="time" id="event-time" name="event-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location">Event Location:</label>
+                        <input type="text" id="event-location" name="event-location" required>
+                    </div>
+                    <button type="submit">Create Event</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NGO Event Creation. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById("event-form").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            // Show alert message
+            alert("Event successfully registered!");
+            // Optionally, you can redirect the user to another page after showing the alert
+            // window.location.href = "success.html";
+        });
+    </script>
+    
+
+</body>
+</html>
